@@ -1,14 +1,18 @@
-import { Geist, Geist_Mono, Inter } from "next/font/google"
+import { Young_Serif, DM_Sans } from "next/font/google"
 
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'})
-
-const fontMono = Geist_Mono({
+const youngSerif = Young_Serif({
+  weight: "400",
   subsets: ["latin"],
-  variable: "--font-mono",
+  variable: "--font-heading",
+})
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans",
 })
 
 export default function RootLayout({
@@ -20,7 +24,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn("antialiased", fontMono.variable, "font-sans", inter.variable)}
+      className={cn("antialiased", youngSerif.variable, dmSans.variable)}
     >
       <body>
         <ThemeProvider>{children}</ThemeProvider>

@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-    --font-heading: var(--font-sans);
+    --font-heading: var(--font-heading);
     --font-sans: var(--font-sans);
     --color-sidebar-ring: var(--sidebar-ring);
     --color-sidebar-border: var(--sidebar-border);
@@ -45,9 +45,43 @@
     --radius-2xl: calc(var(--radius) * 1.8);
     --radius-3xl: calc(var(--radius) * 2.2);
     --radius-4xl: calc(var(--radius) * 2.6);
+
+    --color-bp-bg: var(--bp-bg);
+    --color-bp-title: var(--bp-title);
+    --color-bp-subtitle: var(--bp-subtitle);
+    --color-bp-pad-empty: var(--bp-pad-empty);
+    --color-bp-pad-empty-border: var(--bp-pad-empty-border);
+    --color-bp-pad-accent: var(--bp-pad-accent);
+    --color-bp-pad-label: var(--bp-pad-label);
+    --color-bp-pad-waveform: var(--bp-pad-waveform);
+    --color-bp-pad-1: var(--bp-pad-1);
+    --color-bp-pad-2: var(--bp-pad-2);
+    --color-bp-pad-3: var(--bp-pad-3);
+    --color-bp-pad-4: var(--bp-pad-4);
+    --color-bp-pad-5: var(--bp-pad-5);
+    --color-bp-pad-6: var(--bp-pad-6);
+    --color-bp-pad-7: var(--bp-pad-7);
+    --color-bp-pad-8: var(--bp-pad-8);
 }
 
 :root {
+    --bp-bg: #F5EDE0;
+    --bp-title: #C0542E;
+    --bp-subtitle: #B8A48E;
+    --bp-pad-empty: #E8DDD0;
+    --bp-pad-empty-border: #C8B8A4;
+    --bp-pad-accent: #C0542E;
+    --bp-pad-label: rgba(255, 255, 255, 0.54);
+    --bp-pad-waveform: rgba(255, 255, 255, 0.5);
+    --bp-pad-1: #D95525;
+    --bp-pad-2: #E8A832;
+    --bp-pad-3: #2E8CB5;
+    --bp-pad-4: #5BA553;
+    --bp-pad-5: #C0542E;
+    --bp-pad-6: #D4A843;
+    --bp-pad-7: #4A8BA8;
+    --bp-pad-8: #D07040;
+
     --background: oklch(1 0 0);
     --foreground: oklch(0.145 0 0);
     --card: oklch(1 0 0);
