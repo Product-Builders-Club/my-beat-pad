@@ -15,6 +15,18 @@ export function generateWaveformHeights(): number[] {
   )
 }
 
+// Keyboard mapping: left column (5, T, G, B) → right column (6, Y, H, N)
+export const PAD_KEY_MAP: Record<string, number> = {
+  "5": 0,
+  "6": 1,
+  t: 2,
+  y: 3,
+  g: 4,
+  h: 5,
+  b: 6,
+  n: 7,
+}
+
 export const PAD_COLORS = [
   "var(--bp-pad-1)",
   "var(--bp-pad-2)",
