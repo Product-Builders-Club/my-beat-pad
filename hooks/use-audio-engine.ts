@@ -43,6 +43,7 @@ export function useAudioEngine() {
       const existing = activeSourcesRef.current.get(padIndex)
       if (existing) {
         try {
+          existing.onended = null
           existing.stop()
           existing.disconnect()
         } catch {
