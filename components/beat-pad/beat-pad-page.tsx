@@ -35,7 +35,8 @@ export function BeatPadPage() {
   }, [playSound])
 
   return (
-    <div className="mx-auto flex min-h-svh max-w-[390px] flex-col bg-bp-bg font-sans">
+    <div className="min-h-svh bg-bp-bg font-sans">
+    <div className="mx-auto flex min-h-svh max-w-[390px] flex-col">
       <Header />
       {isLoading ? null : (
         <PadGrid
@@ -44,6 +45,7 @@ export function BeatPadPage() {
           onPlaySound={playSound}
         />
       )}
+    </div>
     </div>
   )
 }
